@@ -17,8 +17,8 @@
                     <p><a target="_blank"  href="#"><img src="../icons/intern_icons/phone-call.svg" alt="">(48) 0000-0000</a></p>
                 </div>
             </div>
-            <hr>
-            <div>
+            <hr class="no_responsive">
+            <div class="no_responsive">
                 <h3>Localização</h3>
                 <br>
                 <p>Cidade - UF - Brasil</p>
