@@ -47,7 +47,7 @@ export default {
 <style>
     footer{
         height: 330px;
-        background-color: rgba(0, 0, 0, 0.779);
+        background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         color: white;
