@@ -1,0 +1,27 @@
+:root {
+
+  /* Variáveis de Cores */
+  --cor-branco: #ffffff;
+  --cor-fundo-claro: rgba(255, 255, 255, 0.647);
+  --cor-preto: #000000;
+  --cor-principal: #76be65;
+  --cor-cinza-claro: rgb(234, 233, 233);
+  --regular: 'mark-pro-regular';
+  --bold: 'mark-pro-bold';
+}
+
+@font-face {
+  font-family: 'mark-pro-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./../fonts/mark-pro-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'mark-pro-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./../fonts/mark-pro-regular.woff') format('woff');
+}
