@@ -37,8 +37,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
-
 // Selecionando os elementos do DOM
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.prev-btn');

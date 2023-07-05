@@ -212,60 +212,162 @@ section div#jardinagem div.textJardinagem p {
     margin: 10px;
 }
 
-section div#depoimentos {
+section div#trabalhos {
     justify-content: center;
     align-items: center;
     padding: 20px 200px;
-    height: 400px;
+    height: 500px;
     width: 100%;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: var(--cor-principal);
+    align-items: center;
 }
-section div#depoimentos h2.textDep{
+
+section div#trabalhos h2.textDep {
     font-size: 5vh;
-    margin: 20px;
+    margin: 10px;
     font-family: var(--bold);
     color: var(--cor-branco);
 }
 
-.carousel {
+section div#trabalhos .carousel {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.slide {
+section div#trabalhos .slide {
+    display: flex;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color: var(--cor-branco);
     text-align: center;
-    margin: 10px 500px;
-    backdrop-filter: blur(100px);
+    margin: 30px 100px;
+    flex-direction: column;
+    width: 400px;
+    height: 266px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.632);
 }
 
+section div#trabalhos .slide img {
+    width: 100%;
+    height: 100%;
+}
 
-.controls {
+section div#trabalhos .controls {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.prev-btn,
-.next-btn {
+section div#trabalhos .prev-btn,
+section div#trabalhos .next-btn {
     margin: 0 15px;
     padding: 10px;
     border-radius: 25px;
     background-color: var(--cor-branco);
     color: var(--cor-principal);
     font-family: var(--bold);
+}
+
+
+
+DIV#contato {
+    width: 100%;
+    padding: 75px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+div#contato h1.titleCcontato {
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 45px;
+}
+
+div#contato div.contentContato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+
+div#contato div.contentContato div.textContato {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+div#contato div.contentContato div.textContato a.cardContato {
+    display: flex;
+    align-items: left;
+    width: 320px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--cor-fundo-claro);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px hsl(0, 0%, 0%, 0.4);
+    margin: 10px;
+    color: #000;
+    font-family: var(--regular);
+}
+
+div#contato div.textContato a.cardContato:hover,
+div#contato div.textContato a.cardContato:active {
+    animation: hover-sombra 0.2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+div#contato div.textContato a.cardContato img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+body hr.section_footer {
+    width: 80%;
+    background-color: #0000007b;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+}
+
+footer img.logo {
+    width: 210px;
+    height: 80%;
+}
+
+footer div.direitos p {
+    font-family: var(--regular);
+    color: var(--cor-principal);
 }
