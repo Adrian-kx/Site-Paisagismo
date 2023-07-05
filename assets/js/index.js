@@ -36,3 +36,29 @@ window.addEventListener('scroll', function () {
     header.classList.remove('header-scrolled');
   }
 });
+
+
+
+// Selecionando os elementos do DOM
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+// Função para mover o carrossel para o slide anterior
+const showPreviousSlide = () => {
+  const firstSlide = carousel.firstElementChild;
+  const lastSlide = carousel.lastElementChild;
+  carousel.insertBefore(lastSlide, firstSlide);
+};
+
+// Função para mover o carrossel para o próximo slide
+const showNextSlide = () => {
+  const firstSlide = carousel.firstElementChild;
+  carousel.appendChild(firstSlide);
+};
+
+// Event listener para o botão "Anterior"
+prevBtn.addEventListener('click', showPreviousSlide);
+
+// Event listener para o botão "Próximo"
+nextBtn.addEventListener('click', showNextSlide);
