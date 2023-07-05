@@ -293,11 +293,10 @@ div#contato h1.titleCcontato {
     color: var(--cor-principal);
     font-size: 45px;
 }
-
 div#contato div.contentContato {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 550px;
@@ -305,40 +304,14 @@ div#contato div.contentContato {
 
 div#contato div.contentContato div.textContato {
     display: flex;
-    height: 100%;
+    height: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
-}
-
-div#contato div.contentContato div.textContato a.cardContato {
-    display: flex;
-    align-items: left;
-    width: 320px;
-    height: 50px;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
     background-color: var(--cor-fundo-claro);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px 3px hsl(0, 0%, 0%, 0.4);
-    margin: 10px;
-    color: #000;
-    font-family: var(--regular);
-}
-
-div#contato div.textContato a.cardContato:hover,
-div#contato div.textContato a.cardContato:active {
-    animation: hover-sombra 0.2s linear 1;
-    animation-fill-mode: forwards;
-}
-
-div#contato div.textContato a.cardContato img {
-    width: 40px;
-    height: 40px;
-    margin: 20px;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.419);
 }
 
 body hr.section_footer {
@@ -371,3 +344,125 @@ footer div.direitos p {
     font-family: var(--regular);
     color: var(--cor-principal);
 }
+
+
+
+
+
+
+
+section.apresentacao .conteudo .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    z-index: 4;
+    margin-top: 15px;
+  }
+  
+  /* Link da <div class="links"> */
+  section.apresentacao .conteudo .links a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    max-height: 55px;
+    margin: 10px 0 0 0;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.274);
+  }
+  
+  section.apresentacao .conteudo .links a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  section.apresentacao .conteudo .links a:hover .icone img {
+    transform: scale(1.2);
+  }
+  
+  section.apresentacao .conteudo .links a .icone {
+    height: 55px;
+    border-radius: 10px 0 0 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  section.apresentacao .conteudo .links a .insta {
+    background-color: hsl(330, 98%, 50%);
+  }
+  
+  section.apresentacao .conteudo .links a .facebook {
+    background-color: hsl(221, 44%, 41%);
+  }
+  
+  section.apresentacao .conteudo .links a .whats {
+    background-color: #4A9B2F;
+  }
+  
+  section.apresentacao .conteudo .links a .loc {
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  
+  section.apresentacao .conteudo .links a .icone img {
+    width: 100%;
+    max-width: 35px;
+    transition: all 0.3s;
+  }
+  
+  section.apresentacao .conteudo .links a .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  section.apresentacao .conteudo .links a .texto h3 {
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-preto);
+  }
+  
+  section.apresentacao .conteudo .links a .texto p {
+    font-family: var(--regular);
+    font-size: 0.8rem;
+    color: var(--cor-preto);
+    opacity: 0.5;
+    margin: 5px 0 0 0;
+  }
+  
+  /* Link destacado da <div class="links"> */
+  section.apresentacao .conteudo .links a.destaque {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  section.apresentacao .conteudo .links a.destaque .texto {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  section.apresentacao .conteudo .links a.destaque:hover h4 {
+    background-color: var(--cor-branco);
+    color: var(--cor-principal);
+  }
+  
+  section.apresentacao .conteudo .links a.destaque h4 {
+    font-family: var(--bold);
+    font-size: 0.8rem;
+    color: var(--cor-branco);
+    letter-spacing: 10px;
+    background-color: var(--cor-principal);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s;
+  }
