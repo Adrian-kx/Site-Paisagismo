@@ -173,44 +173,8 @@ section div#sobre div.textSobre p {
     margin: 10px;
 }
 
-section div#jardinagem {
-    display: flex;
-    background-image: url(./../img/fundo_jardinagem.jpeg);
-    justify-content: center;
-    align-items: center;
-    padding: 20px 200px;
-    width: 100%;
-    height: 85vh;
-    background-size: 60%;
-    background-repeat: none;
-    background-position: center;
-}
 
-section div#jardinagem div.textJardinagem {
-    background-color: var(--cor-branco);
-    width: 70%;
-    padding: 45px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.537);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-section div#jardinagem div.textJardinagem h2 {
-    font-size: 5vh;
-    margin: 20px;
-    font-family: var(--bold);
-    color: var(--cor-principal);
-}
-
-section div#jardinagem div.textJardinagem p {
-    font-family: var(--regular);
-    font-size: 2.5vh;
-    text-align: justify;
-    margin: 10px;
-}
 
 section div#trabalhos {
     justify-content: center;
@@ -278,6 +242,47 @@ section div#trabalhos .next-btn {
 
 
 
+
+section div#jardinagem {
+    background-size: 75%;
+    display: flex;
+    background-image: url(./../img/4folhaas.png);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 200px;
+    width: 100%;
+    height: 85vh;
+    background-repeat: none;
+    background-position: center;
+}
+
+section div#jardinagem div.textJardinagem {
+    background-color: var(--cor-branco);
+    width: 70%;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.537);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div#jardinagem div.textJardinagem h2 {
+    font-size: 5vh;
+    margin: 20px;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+}
+
+section div#jardinagem div.textJardinagem p {
+    font-family: var(--regular);
+    font-size: 2.5vh;
+    text-align: justify;
+    margin: 10px;
+}
+
+
 DIV#contato {
     width: 100%;
     padding: 75px 200px;
@@ -286,6 +291,7 @@ DIV#contato {
     align-items: center;
     flex-direction: column;
     padding-bottom: 0;
+    background-color: var(--cor-branco);
 }
 
 div#contato h1.titleCcontato {
@@ -325,12 +331,11 @@ body hr.section_footer {
 }
 
 footer {
+    background-color: var(--cor-branco);
     width: 100%;
     height: 200px;
-    top: 0;
-    padding: 10px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 50px 200px;
 }
@@ -344,8 +349,6 @@ footer div.direitos p {
     font-family: var(--regular);
     color: var(--cor-principal);
 }
-
-
 
 
 
@@ -465,4 +468,4 @@ section.apresentacao .conteudo .links {
     padding: 10px;
     border-radius: 10px 10px 0 0;
     transition: all 0.3s;
-  }
+  } 
